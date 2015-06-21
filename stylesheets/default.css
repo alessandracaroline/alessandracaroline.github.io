@@ -1,0 +1,38 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: #47494d;
+}
+
+header {
+  background-color:#23477A;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav a {
+  background-color: #23477A;
+  color:white;
+}
+
+header img {
+  width: 70%;
+  height: 70%;
+  display: block;
+}
+
+main section {
+  display: inline-block;
+}
+
+main section img {
+  width: 30%;
+  height: 30%;
+}
+
+main section aside {
+  float: right;
+  width: 50%;
+}
