@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alessandra Caroline's DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav class="blog-post"><a href="blog-index.html">Home</a></nav>
+  </header>
+
+<main>
+  <h1>Best practices when using classes vs. ids</h1>
+  <h2>A HTML &amp; CSS concept</h2>
+  <h4>June 21, 2015</h4>
+
+  <section>
+    <h2>The benefits of using classes and ids at all</h2>
+    <p>
+      Classes and ids are attributes that help control the structure and layout of a page. If you want to group together related elements on a page you can make use of a HTML element (e.g. &lt;div&gt;) together with class or id attributes. This will indicate the type of content you will find in these groups and allow you to style this group differently using CSS. Using these attributes will only affect their appearance on the page if combined with a CSS rule with special styling.
+    </p>
+    <br>
+    <h2>When do I use classes vs. ids then?</h2>
+     <p>
+      An <span class="bold">id</span> is uniquely identifying one element within your code whereas a <span class="bold">class</span> can be attributed to several elements in your code. If you want to style one element differently from any other instance of that element, like for example a &lt;h1&gt; heading, you would use an <span class="bold">id</span>. Only this one heading that you associate with the special <span class="bold">id</span> will be displayed in the special format that you define in you CSS file. It could also be the case that you want to style several elements as being different from the other elements on your page. In that case you would use the <span class="bold">class</span> attribute. For example, in this blog post I used a class &ldquo;bold&rdquo; for all bold words within a text paragraph together with the element &lt;span&gt;. I want to display several words in bold, which means that I want to style several elements in the same way. Therefore, I use the <span class="bold">class</span> attribute instead of the <span class="bold">id</span> attribute, because I can assign it to several elements in my code.
+     </p>
+   <br>
+    <h2>How do I use classes and ids in my code?</h2>
+    <p>
+      I will explain how to incorporate the class or id attributes in your code together with the &lt;span&gt; element.
+    </p>
+    <br>
+    <p><span class="bold">Class:</span>
+      <ul>
+        <li>In the HTML code you assign elements with a class attribute in the following way: &lt;span class=""&gt;, for example &lt;span class="bold"&gt;.</li>
+        <li>In the CSS code a class attribute is indicated as a CSS selector by a period symbol followed by the class attribue value. In the above example: .bold {text-decoration:bold}</li>
+      </ul>
+    </p>
+    <p><span class="bold">Id:</span>
+      <ul>
+        <li>In the HTML code you assign one element one unique id in the following way: &lt;span id=""&gt;, for example &lt;span class="123"&gt;.</li>
+        <li>In the CSS code the unique id attribute is indicated as a CSS selector by a hash symbol followed by the id attribue value. In the above example: #123 {}</li>
+      </ul>
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+</body>
+</html>
+
