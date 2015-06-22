@@ -1,7 +1,9 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
   background-color: white;
   color: #47494d;
+  margin: 0em;
 }
 
 header {
@@ -9,30 +11,100 @@ header {
 }
 
 header nav {
-  display: inline-block;
+  display: block;
+  position: fixed;
+  background-color: #23477A;
+  opacity: 0.8;
+  margin: 0em;
+  padding: 0.8em;
+  height: 2em;
+  width: 100%;
+  text-align: right;
 }
 
 header nav a {
   background-color: #23477A;
   color:white;
+  padding: 0.4em;
+  margin: 0.1em;
+  text-decoration: none;
+  display: inline-block;
 }
 
-header img {
-  width: 70%;
-  height: 70%;
+img.large {
+  width: 100%;
+  min-height: 30em;
   display: block;
+  clear: both;
+}
+
+header h1 {
+  position: relative;
+}
+
+
+main {
+  margin-left: 1.5em;
+  margin-right: 2em;
+  margin-top: 1em;
 }
 
 main section {
   display: inline-block;
+  margin-top: 1.5em;
 }
 
-main section img {
-  width: 30%;
-  height: 30%;
+main h1 {
+  margin-bottom: 1em;
 }
 
-main section aside {
+main section article {
   float: right;
-  width: 50%;
+  width: 70%;
+}
+
+section a {
+  text-decoration: none;
+}
+
+img#profile {
+  width: 25%;
+}
+
+img.align-left {}
+
+img.align-right {}
+
+img.medium {
+}
+
+/* BLOG CSS */
+
+.post {
+  display:inline-block;
+  border: 1px solid #47494d;
+  margin: 1.5em;
+  padding: 0.8em;
+  width: 20em;
+  height: 10em;
+}
+
+.tag {
+  background-color:#23477A;
+  color: white;
+  display: inline;
+  padding: 0.1em;
+  margin-top:0.5em;
+}
+
+.post a:link {
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.blog-post {
+  text-align: left;
 }
