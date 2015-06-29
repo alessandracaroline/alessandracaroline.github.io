@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alessandra Caroline's DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav class="blog-post"><a href="blog-index.html">Home</a></nav>
+  </header>
+
+<main>
+  <h1>Ruby: Arrays and Hashes</h1>
+  <h2>A small comparison</h2>
+  <h4>June 28, 2015</h4>
+
+  <section>
+    <h2>Their common ground</h2>
+    <p>
+      Arrays and hashes are both containers of a collection of objects and thereby aid in storing and retrieving data. Arrays and hashes differ in the way the objects are ordered. Therefore, their usage
+    </p>
+    <br>
+    <h2>Arrays</h2>
+     <p>
+      Any object can be stored in an array. The objects stored in an array are ordered. Each has its slot, which is indexed by numbers starting with zero. The objects can be accessed through their index in the array. Arrays are best used when dealing with ordered lists.
+     </p>
+   <br>
+    <p><span class="bold">Creating an array:</span>
+      <code>
+        <pre>
+        array = Array.new
+        array = []
+        </pre>
+      </code>
+    </p>
+
+     <p><span class="bold">Example:</span>
+      <code>
+        <pre>
+        >> names = ["Alessandra","Caroline","Faisst"]
+        => names = ["Alessandra","Caroline","Faisst"]
+        >> names[1]
+        => "Caroline"
+        </pre>
+      </code>
+    </p>
+   <br>
+    <h2>Hashes</h2>
+    <p>
+      Hashes contain pairs of objects. They aren't assigned fixed indexed slots like objects in Arrays, but any object can refer to a slot. In a pair of object, one is the <span class="italic">key</span> and the other represents the <span class="italic">value</span>. The value can be accessed through the key. Keys are unique per hash. Any object can represent the hash key or value, but there can only be one value associated with any given key.
+    </p>
+    <br>
+    <p><span class="bold">Creating a hash:</span>
+      <code>
+        <pre>
+        array = Hash.new
+        array = {}
+        </pre>
+      </code>
+    </p>
+
+     <p><span class="bold">Example:</span>
+      <code>
+        <pre>
+        >> names = {
+                  "first_name" => "Alessandra",
+                  "middle_name" => "Caroline",
+                  "last_name" => "Faisst"
+                  }
+
+        >> names["middle_name"]
+        => "Caroline"
+        </pre>
+      </code>
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+</body>
+</html>
+
