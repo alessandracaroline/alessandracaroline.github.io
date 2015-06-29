@@ -5,3 +5,7 @@ nav .blog-post {
 .bold {
   font-weight: bold;
 }
+
+.italic {
+  font-style: italic;
+}
