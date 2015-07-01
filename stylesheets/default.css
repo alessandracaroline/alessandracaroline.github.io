@@ -58,6 +58,7 @@ main h1 {
   margin-bottom: 0.5em;
 }
 
+
 main section article {
   float: right;
   width: 70%;
@@ -76,6 +77,11 @@ img.align-left {}
 img.align-right {}
 
 img.medium {
+}
+
+.icon {
+  height: 21px;
+  margin-right: 0.2em;
 }
 
 /* BLOG CSS */
