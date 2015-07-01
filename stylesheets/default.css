@@ -15,7 +15,6 @@ header nav {
   position: fixed;
   background-color: #23477A;
   opacity: 0.8;
-  margin: 0em;
   padding: 0.8em;
   height: 2em;
   width: 100%;
@@ -29,6 +28,10 @@ header nav a {
   margin: 0.1em;
   text-decoration: none;
   display: inline-block;
+}
+
+#last_nav_item {
+  margin-right: 1.5em;
 }
 
 img.large {
@@ -61,7 +64,9 @@ main h1 {
 
 main section article {
   float: right;
-  width: 70%;
+  width: 69%;
+  margin-right: 2em;
+  line-height: 150%;
 }
 
 section a {
@@ -80,7 +85,7 @@ img.medium {
 }
 
 .icon {
-  height: 21px;
+  height: 26px;
   margin-right: 0.2em;
 }
 
