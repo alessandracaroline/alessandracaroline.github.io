@@ -14,14 +14,13 @@
   </header>
 
 <main>
-  <h1>Ruby: Arrays and Hashes</h1>
-  <h2>A small comparison</h2>
-  <h4>June 28, 2015</h4>
-
+  <h1 class="title">Ruby: Arrays and Hashes</h1>
+  <h2 class="title">A small comparison</h2>
+  <h4 class="title">June 28, 2015</h4>
+<br>
   <section>
-    <h2>Their common ground</h2>
     <p>
-      Arrays and hashes are both containers of a collection of objects and thereby aid in storing and retrieving data. Arrays and hashes differ in the way the objects are ordered. Therefore, their usage
+      Arrays and hashes are both containers of a collection of objects and thereby aid in storing and retrieving data. Arrays and hashes differ in the way their stored objects are ordered.
     </p>
     <br>
     <h2>Arrays</h2>
@@ -30,52 +29,49 @@
      </p>
    <br>
     <p><span class="bold">Creating an array:</span>
-      <code>
-        <pre>
-        array = Array.new
-        array = []
-        </pre>
-      </code>
-    </p>
 
+<pre>
+> array <span class="monokai_rosa">=</span> Array<span class="monokai_rosa">.</span>new
+> array <span class="monokai_rosa">= []</span>
+</pre>
+
+    </p>
+<br>
      <p><span class="bold">Example:</span>
-      <code>
-        <pre>
-        >> names = ["Alessandra","Caroline","Faisst"]
-        => names = ["Alessandra","Caroline","Faisst"]
-        >> names[1]
-        => "Caroline"
-        </pre>
-      </code>
+    <br>
+<pre>
+> favourite_cities <span class="monokai_rosa">= [</span><span class="monokai_yellow">"Berlin"</span>,<span class="monokai_yellow">"Buenos Aires"</span>,<span class="monokai_yellow">"New York City"</span><span class="monokai_rosa">]</span>
+=> favourite_cities <span class="monokai_rosa">= [</span><span class="monokai_yellow">"Berlin"</span>,<span class="monokai_yellow">"Buenos Aires"</span>,<span class="monokai_yellow">"New York City"</span><span class="monokai_rosa">]</span>
+> favourite_cities<span class="monokai_rosa">[</span><span class="monokai_purple">1</span><span class="monokai_rosa">]</span>
+=> <span class="monokai_yellow">"Buenos Aires"</span>
+</pre>
     </p>
    <br>
     <h2>Hashes</h2>
     <p>
-      Hashes contain pairs of objects. They aren't assigned fixed indexed slots like objects in Arrays, but any object can refer to a slot. In a pair of object, one is the <span class="italic">key</span> and the other represents the <span class="italic">value</span>. The value can be accessed through the key. Keys are unique per hash. Any object can represent the hash key or value, but there can only be one value associated with any given key.
+      Hashes contain pairs of objects. They aren't assigned fixed indexed slots like objects in arrays, but any object pair can refer to a slot. In a pair of objects, one is the <span class="italic">key</span> and the other represents the <span class="italic">value</span>. The value can be accessed through the key. Keys are unique per hash. That means that any object can represent the hash key or value, but there can only be one value associated with any given key.
     </p>
     <br>
     <p><span class="bold">Creating a hash:</span>
-      <code>
-        <pre>
-        array = Hash.new
-        array = {}
-        </pre>
-      </code>
+    <br>
+<pre>
+> array <span class="monokai_rosa">=</span> Hash<span class="monokai_rosa">.</span>new
+> array <span class="monokai_rosa">= {}</span>
+</pre>
     </p>
-
+<br>
      <p><span class="bold">Example:</span>
-      <code>
-        <pre>
-        >> names = {
-                  "first_name" => "Alessandra",
-                  "middle_name" => "Caroline",
-                  "last_name" => "Faisst"
-                  }
 
-        >> names["middle_name"]
-        => "Caroline"
-        </pre>
-      </code>
+<pre>
+> cities <span class="monokai_rosa">= {</span>
+          <span class="monokai_yellow">"birthplace"</span> <span class="monokai_rosa">=></span> <span class="monokai_yellow">"Hamburg"</span>,
+          <span class="monokai_yellow">"hometown"</span> <span class="monokai_rosa">=></span> <span class="monokai_yellow">"Stuttgart"</span>,
+          <span class="monokai_yellow">"residence"</span> <span class="monokai_rosa">=></span> <span class="monokai_yellow">"Berlin"</span>
+          <span class="monokai_rosa">}</span>
+
+> cities<span class="monokai_rosa">[</span><span class="monokai_yellow">"residence"</span><span class="monokai_rosa">]</span>
+=> <span class="monokai_yellow">"Berlin"</span>
+</pre>
     </p>
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>

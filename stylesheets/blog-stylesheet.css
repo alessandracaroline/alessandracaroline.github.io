@@ -1,3 +1,9 @@
+header nav {
+  display: block;
+  position: static;
+  opacity: 1;
+}
+
 nav .blog-post {
   text-align: left;
 }
@@ -9,3 +15,44 @@ nav .blog-post {
 .italic {
   font-style: italic;
 }
+
+.title {
+  margin-bottom: 0em;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 1.5em;
+}
+
+pre {
+  background-color: #272822;
+  overflow: auto;
+  width: auto;
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;
+  padding:.2em .6em;
+  margin: 0;
+  line-height: 150%;
+  color:#f8f8f2;
+  font-family: monospace;
+}
+
+.monokai_rosa {
+  background-color: #272822;
+  color:#f92672;
+  font-family: monospace;
+}
+
+.monokai_yellow {
+  background-color: #272822;
+  color:#e6db74;
+  font-family: monospace;
+}
+
+.monokai_purple {
+  background-color: #272822;
+  color:#ae81ff;
+  font-family: monospace;
+}
+
