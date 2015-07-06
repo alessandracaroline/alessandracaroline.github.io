@@ -15,7 +15,6 @@ header nav {
   position: fixed;
   background-color: #23477A;
   opacity: 0.8;
-  margin: 0em;
   padding: 0.8em;
   height: 2em;
   width: 100%;
@@ -29,6 +28,10 @@ header nav a {
   margin: 0.1em;
   text-decoration: none;
   display: inline-block;
+}
+
+#last_nav_item {
+  margin-right: 1.5em;
 }
 
 img.large {
@@ -58,9 +61,15 @@ main h1 {
   margin-bottom: 0.5em;
 }
 
+main h2 {
+  position: absolute;
+}
+
 main section article {
   float: right;
-  width: 70%;
+  width: 69%;
+  margin-right: 2em;
+  line-height: 150%;
 }
 
 section a {
@@ -71,11 +80,20 @@ img#profile {
   width: 25%;
 }
 
-img.align-left {}
+img.align-left {
+  float: left;
+}
 
-img.align-right {}
+img.align-right {
+  float: right;
+}
 
 img.medium {
+}
+
+.icon {
+  height: 26px;
+  margin-right: 0.2em;
 }
 
 /* BLOG CSS */
