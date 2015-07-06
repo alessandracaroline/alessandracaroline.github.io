@@ -61,7 +61,7 @@ main h1 {
   margin-bottom: 0.5em;
 }
 
-main h2 {
+main h2.img_h2 {
   position: absolute;
 }
 
