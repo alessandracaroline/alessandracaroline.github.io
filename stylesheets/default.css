@@ -42,7 +42,12 @@ img.large {
 }
 
 header h1 {
-  position: relative;
+  position: absolute;
+  top: 5em;
+  left: 1em;
+  background-color:transparent;
+  color: #f7f7f7;
+  font-size: 400%;
 }
 
 
@@ -98,13 +103,24 @@ img.medium {
 
 /* BLOG CSS */
 
-.post {
-  display:inline-block;
-  border: 1px solid #47494d;
-  margin: 1.5em;
-  padding: 0.8em;
-  width: 20em;
-  height: 10em;
+.technical {
+  float: left;
+  margin-left: 7em;
+}
+
+.cultural {
+  float: right;
+  margin-right: 7em;
+}
+
+.technical h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.cultural h1{
+  text-align: center;
+  text-decoration: underline;
 }
 
 .tag {
@@ -113,6 +129,15 @@ img.medium {
   display: inline;
   padding: 0.1em;
   margin-top:0.5em;
+}
+
+.post {
+  display: block;
+  border: 1px solid #47494d;
+  margin: 1.5em;
+  padding: 0.8em;
+  width: 25em;
+  height: 10em;
 }
 
 .post a:link {
@@ -125,4 +150,13 @@ img.medium {
 
 .blog-post {
   text-align: left;
+}
+
+.project_box {
+  display: block;
+  border: 1px solid #47494d;
+  margin: 1.5em;
+  padding: 0.8em;
+  width: 25em;
+  height: 10em;
 }
