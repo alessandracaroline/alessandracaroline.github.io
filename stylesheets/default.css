@@ -37,13 +37,14 @@ header nav a {
 img.large {
   width: 100%;
   min-height: 30em;
+  max-height: 50em;
   display: block;
   clear: both;
 }
 
 header h1 {
   position: absolute;
-  top: 5em;
+  top: 6em;
   left: 1em;
   background-color:transparent;
   color: #f7f7f7;
@@ -53,21 +54,18 @@ header h1 {
 
 main {
   margin-left: 1.5em;
-  margin-right: 2em;
+  margin-right: 1.5em;
   margin-top: 1em;
 }
 
 main section {
   display: inline-block;
   margin-top: 1.5em;
+  margin-right: 0em;
 }
 
 main h1 {
   margin-bottom: 0.5em;
-}
-
-main h2.img_h2 {
-  position: absolute;
 }
 
 main section article {
@@ -85,15 +83,36 @@ img#profile {
   width: 25%;
 }
 
-img.align-left {
+img.scaled {
+  width: 100%;
+}
+
+figure {
+  margin-top: 2em;
+  margin-left: 0em;
+  margin-right: 0em;
+  padding: 0em;
+  position: relative;
+}
+
+figure.align-left {
   float: left;
+  width: 50%;
 }
 
-img.align-right {
+figure.align-right {
   float: right;
+  width: 50%;
 }
 
-img.medium {
+figcaption {
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  margin: 1em;
+  font-size: 200%;
+  color: white;
+  background-color: transparent;
 }
 
 .icon {
@@ -105,12 +124,16 @@ img.medium {
 
 .technical {
   float: left;
-  margin-left: 7em;
+  width: 50%;
+  position: relative;
+  top: 2em;
 }
 
 .cultural {
   float: right;
-  margin-right: 7em;
+  width: 50%;
+  position: relative;
+  top: 2em;
 }
 
 .technical h1{
@@ -123,21 +146,37 @@ img.medium {
   text-decoration: underline;
 }
 
-.tag {
+.tag_tech {
   background-color:#23477A;
   color: white;
   display: inline;
   padding: 0.1em;
+  margin-top: 0.5em;
+  position: absolute;
+  left: 0.8em;
+  bottom: 0.8em;
+}
+
+.tag_cult {
+  background-color:#42738F;
+  color: white;
+  display: inline;
+  padding: 0.1em;
   margin-top:0.5em;
+  position: absolute;
+  left: 0.8em;
+  bottom: 0.8em;
 }
 
 .post {
-  display: block;
+  display: inline-block;
+  position: relative;
   border: 1px solid #47494d;
-  margin: 1.5em;
+  margin: 1em;
   padding: 0.8em;
-  width: 25em;
+  width: 15em;
   height: 10em;
+  vertical-align: top;
 }
 
 .post a:link {
@@ -153,10 +192,11 @@ img.medium {
 }
 
 .project_box {
-  display: block;
+  display: inline-block;
   border: 1px solid #47494d;
   margin: 1.5em;
   padding: 0.8em;
   width: 25em;
   height: 10em;
+  vertical-align: top;
 }
