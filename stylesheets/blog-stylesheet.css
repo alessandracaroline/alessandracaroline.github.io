@@ -72,6 +72,13 @@ code {
     font-family: monospace;
 }
 
-table {
-  border: 0.5;
+table, th, td {
+  border: 0.1em solid #D9D9D6;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+th {
+  font-weight: bold;
+  font-size: 110%;
 }

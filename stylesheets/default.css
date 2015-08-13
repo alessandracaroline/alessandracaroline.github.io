@@ -93,16 +93,15 @@ figure {
   margin-right: 0em;
   padding: 0em;
   position: relative;
+  width: 50%;
 }
 
 figure.align-left {
   float: left;
-  width: 50%;
 }
 
 figure.align-right {
   float: right;
-  width: 50%;
 }
 
 figcaption {
@@ -122,32 +121,27 @@ figcaption {
 
 /* BLOG CSS */
 
-.technical {
-  float: left;
+.technical, .cultural {
   width: 50%;
   position: relative;
   top: 2em;
+}
+
+.technical {
+  float: left;
 }
 
 .cultural {
   float: right;
-  width: 50%;
-  position: relative;
-  top: 2em;
 }
 
-.technical h1{
+.technical h1, .cultural h1{
   text-align: center;
   text-decoration: underline;
 }
 
-.cultural h1{
-  text-align: center;
-  text-decoration: underline;
-}
 
-.tag_tech {
-  background-color:#23477A;
+.tag_tech, .tag_cult {
   color: white;
   display: inline;
   padding: 0.1em;
@@ -157,15 +151,12 @@ figcaption {
   bottom: 0.8em;
 }
 
+.tag_tech {
+  background-color:#23477A;
+}
+
 .tag_cult {
   background-color:#42738F;
-  color: white;
-  display: inline;
-  padding: 0.1em;
-  margin-top:0.5em;
-  position: absolute;
-  left: 0.8em;
-  bottom: 0.8em;
 }
 
 .post {
