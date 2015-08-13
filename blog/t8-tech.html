@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alessandra Caroline's DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <nav class="blog-post"><a href="blog-index.html">Home</a></nav>
+  </header>
+
+<main>
+<hgroup>
+  <h1 class="title">RegEx - Regular Expressions</h1>
+  <h2 class="title">What they do and how they help you</h2>
+  <h4 class="title">August 09, 2015</h4>
+</hgroup>
+
+  <section>
+    <h2>What is a regular expression?</h2>
+    <p>
+      A regular expression (short: RegEx) is a sequence of characters that define a search pattern. They are useful when searching for data in text or when performing "search-and-replace" operations by matching this search pattern in the text. A RegEx can be a single character, or a more complicated sequence of characters. RegEx can make a search much more powerful, because they can include modifiers and for example perform a case insensitive search.
+    </p>
+    <br>
+    <h2>Syntax</h2>
+    <p>
+      <code>/pattern/modifiers;</code>
+    </p>
+    <br>
+    <p>
+      A good reference on RegEx syntax can be found under this link: <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">w3schools' JavaScript RegExp Reference</a>
+    </p>
+    <br>
+    <h2>Modifiers</h2>
+    <p>
+      <table>
+        <tr>
+          <th>Modifier</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>i</td>
+          <td>perform case-insensitive match</td>
+        </tr>
+        <tr>
+          <td>g</td>
+          <td>perform a global match (finds all matches, does not stop after the first match)</td>
+        </tr>
+        <tr>
+          <td>m</td>
+          <td>perform multiline matching</td>
+        </tr>
+      </table>
+    </p>
+    <br>
+     <h2>Brackets</h2>
+    <p>
+      Brackets are used to find a range of characters
+      <table>
+        <tr>
+          <th>Expression</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>[abc]</td>
+          <td>find any character between the brackets</td>
+        </tr>
+        <tr>
+          <td>^[abc]</td>
+          <td>find any character NOT between the brackets</td>
+        </tr>
+        <tr>
+          <td>[a-z] or [A-Z] or [A-z]</td>
+          <td>find any character from lowercase a to lowercase z / from uppercase A to uppercase Z / from uppercase A to lowercase Z</td>
+        </tr>
+        <tr>
+          <td>[0-9]</td>
+          <td>find any digit between the brackets</td>
+        </tr>
+        <tr>
+          <td>(a|b)</td>
+          <td>find any of the alternatives</td>
+        </tr>
+      </table>
+    </p>
+    <br>
+    <h2>Metacharacters</h2>
+    <p>
+      Metacharacters have a special meaning. They are written with a backslash. Using a capital letter will negate the meaning of the lowercase letter.
+      <table>
+        <tr>
+          <th>Character</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>find a single character, except newline or line terminator</td>
+        </tr>
+        <tr>
+          <td>\w</td>
+          <td>find a word character</td>
+        </tr>
+        <tr>
+          <td>\d</td>
+          <td>find a digit</td>
+        </tr>
+        <tr>
+          <td>\s</td>
+          <td>find a whitespace character</td>
+        </tr>
+        <tr>
+          <td>\b</td>
+          <td>find a match at the beginning/end of a word</td>
+        </tr>
+      </table>
+    </p>
+    <br>
+    <h2>Quantifiers</h2>
+    <p>
+      Quantifiers define quantities.
+      <table>
+        <tr>
+          <th>Character</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>n+</td>
+          <td>matches any string that contains at least one 'n'</td>
+        </tr>
+        <tr>
+          <td>n*</td>
+          <td>matches any string that contains zero or more occurrences of 'n'</td>
+        </tr>
+        <tr>
+          <td>n?</td>
+          <td>matches any string that contains zero or one occurence of 'n'</td>
+        </tr>
+        <tr>
+          <td>{a}</td>
+          <td>matches any string that contains exactly a occurences of the pattern</td>
+        </tr>
+        <tr>
+          <td>{a, b}</td>
+          <td>matches any string that contains exactly a to b occurences of the pattern</td>
+        </tr>
+        <tr>
+          <td>{a,}</td>
+          <td>matches any string that contains at least a occurences of the pattern</td>
+        </tr>
+        <tr>
+          <td>\b</td>
+          <td>find a match at the beginning/end of a word</td>
+        </tr>
+      </table>
+    </p>
+    <br>
+    <h2>Application in JavaScript</h2>
+     <p>
+      In JavaScript, regular expressions are often used with the string methods:
+        <ul>
+          <li><code>match()</code>, which searches for a match of the pattern and returns the pattern that match.</li>
+          <li><code>search()</code>, which searches for a match of the pattern and returns the position of the match.</li>
+          <li><code>replace()</code>, which returns a modified string where the pattern is replaced.</li>
+        </ul>
+     </p>
+    <br>
+    <h2>Examples</h2>
+      <table>
+        <tr>
+          <th>RegEx</th>
+          <th>Example</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>/us/  </td>
+          <td>matches "us"</td>
+          <td>in "us", "house", "mouse", "fuss".
+        </tr>
+        <tr>
+          <td>/^un/  </td>
+          <td>matches "un"</td>
+          <td>in the beginning of the expression that is being matched, e.g. "unfair".</td>
+        </tr>
+        <tr>
+          <td>/ab*c/  </td>
+          <td>matches "ac", "abc", "abbc" and "abbbbbbbc"</td>
+          <td>the last character before the *, can have zero or more occurences.</td>
+        </tr>
+        <tr>
+          <td>/ab+c/  </td>
+          <td>matches "abc", "abbc" and "abbbbbbbc", but not "ac"</td>
+          <td>the last character before the *, has at least one occurence.</td>
+        </tr>
+      </table>
+<br>
+<br>
+
+
+  </section>
+</main>
+
+</body>
+</html>
+
